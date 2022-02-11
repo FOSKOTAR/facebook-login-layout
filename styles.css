@@ -13,8 +13,8 @@ main{
     flex-wrap: wrap;
     align-items: center;
     background-color: #f0f2f5;
-    height: 720px;
-    width: 1011;
+    height: auto;
+    width: auto;
     justify-content: center;
     
 }
@@ -23,7 +23,7 @@ main{
     flex-flow: column;
     height: 536px;
     width: 1011px;
-    padding: 20px 0px;
+    padding: 0px;
     justify-content: center;
 }
 .sectionform{
@@ -117,6 +117,7 @@ button a{
     font-weight: bold;
     text-decoration-line: none;
 }
+
 .desc{
     height: 286px;
     width: 580px;
@@ -198,9 +199,20 @@ footer {
       .main_div{
           flex-flow: row wrap;
           align-items: center;
+          height: 900px;
+          align-content: center;
       }
       .desc {
+         display: flex;
+         flex-direction: column;
          padding-right: 32px;
-         text-align: justify;
+         align-items: center;
+         text-align: center;
+         padding-right: 0;
+      }.text_desc{
+          text-align: center;
       }
-  }
+      footer{
+          align-items: center;
+      }
+    }
